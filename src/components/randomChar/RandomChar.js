@@ -24,7 +24,7 @@ class RandomChar extends Component {
         clearInterval(this.timerId)
     }
 
-    onCharLoading = () => {this.setState({loading: true })}
+    onCharLoading = () => {this.setState({loading: true, error: false })}
 
     onCharLoaded = (char) => {this.setState({char, loading: false})}
 
